@@ -1,0 +1,9 @@
+
+include "Analyzers/BTagPAT/data/Jetpt30Selector.cfi"
+
+module selectedTightBJetsTC2 = BDiscriminatorPatJetSelector {
+  InputTag src      = selectedLayer1JetsPt30
+  string disc       = "trackCountingHighEffBJetTags"
+  double discCut    = 14.2
+}
+

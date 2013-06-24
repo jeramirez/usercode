@@ -1,0 +1,4 @@
+module selectedLayer1JetsPt30 = PATJetSelector{
+  InputTag src   = selectedLayer1Jets
+  string cut = "pt > 30."
+}

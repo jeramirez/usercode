@@ -1,0 +1,27 @@
+#CVSROOT :gserver:cmscvs.cern.ch:/cvs_server/repositories/CMSSW
+
+#check out
+cvs co -d Analyzers UserCode/PuertoRicoGroup/Analyzers
+cvs co -d Analyzers UserCode/PuertoRicoGroup/Analyzers/README.cvs
+cvs co -d Analyzers/CascadeProducer UserCode/PuertoRicoGroup/Analyzers/CascadeProducer
+
+# update cvs
+kserver_init
+project CMSSW
+cvs -d $CVSROOT -n update -dA
+cvs -d $CVSROOT ci -m " new update " file.cc
+
+#remove 
+cvs -d $CVSROOT remove test/BJetOperatingPoints.cfi
+cvs -d $CVSROOT ci -m "deprecated" test/BJetOperatingPoints.cfi
+
+#add
+cvs -d $CVSROOT add test/BJetOperatingPoints.cfi
+cvs -d $CVSROOT ci -m "new version" test/BJetOperatingPoints.cfi
+
+# make a new directory/project
+cvs co -d Analyzers UserCode/PuertoRicoGroup/Analyzers/README.cvs
+cd Analyzers
+mkdir YourNewProject
+cvs add YourNewProject
+

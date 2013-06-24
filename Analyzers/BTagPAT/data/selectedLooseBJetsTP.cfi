@@ -1,0 +1,9 @@
+
+include "Analyzers/BTagPAT/data/Jetpt30Selector.cfi"
+
+module selectedLooseBJetsTP = BDiscriminatorPatJetSelector {
+  InputTag src      = selectedLayer1JetsPt30
+  string disc       = "jetProbabilityBJetTags"
+  double discCut    = 0.2351
+}
+

@@ -1,0 +1,35 @@
+#--test 2010 lambda
+cmsRun lambda_2010_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0000/44E20311-C56D-E011-BE4B-90E6BA19A20B.root output2=lambda2010_00
+
+#--test 2011 lambda
+cmsRun lambda_2011_424_may10_cfg.py  print  maxEvents=-1 files=/store/data/Run2011A/MuOnia/RECO/May10ReReco-v1/0000/00252552-3F7E-E011-8B29-0018F3D095FE.root output2=lambda2011_00
+
+#--2011 prompt4 Crash [Dec 22, 2011]
+cmsRun lambda_2011_424_may10_cfg.py  print  maxEvents=-1 files=/store/data/Run2011A/MuOnia/RECO/PromptReco-v4/000/167/898/22C736D2-78A3-E011-B678-003048D37514.root output2=lambda2011_tstrec
+
+#--2011PAT
+cmsRun onia_lambdapat_1file_2011_424_may10_cfg.py  print  maxEvents=1000 files=/store/data/Run2011A/MuOnia/RECO/PromptReco-v4/000/167/898/22C736D2-78A3-E011-B678-003048D37514.root output2=lambda2011_tstpat01
+
+#--2011pat (May10 file)
+cmsRun onia_lambdapat_1file_2011_424_may10_cfg.py  print  maxEvents=1000 files=/store/data/Run2011A/MuOnia/RECO/May10ReReco-v1/0003/6C712849-B87F-E011-BC92-00304867906C.root output2=lambda2011_tstpatmay1001
+
+#--2010PAT
+cmsRun onia_lambdapat_1file_2011_424_may10_cfg.py print  maxEvents=-1 files=/store/data/Run2011B/MuOnia/RECO/PromptReco-v1/000/177/139/AE211EE4-7FE9-E011-A024-E0CB4E55365D.root  output2=testuuu2011_00
+ 
+#--test Lambda_b MC
+cmsRun onia_lambdapat_1file_2011_424_may10_cfg_mc.py  print  maxEvents=500 files=file:/uscms_data/d3/maria22/work2/MultiHadrons/CMSSW_4_2_8_patch7/src/HecBaryons/HecPsiLambda/test/monte_carlo.root output2=test_mc_00 > &test_mc_00.log&
+
+#--Eric file
+cmsRun onia_lambdapat_1file_2011_424_may10_cfg_mc.py  print  maxEvents=500 files=file:/uscms_data/d2/brownson/tmp/FCFABBF5-1DB0-E111-B6E3-0025B3E022C2.root output2=test_mc_01 > &test_mc_01.log&
+
+cmsRun my_onia_mc.py  print  maxEvents=500 files=file:/uscms_data/d2/brownson/tmp/FCFABBF5-1DB0-E111-B6E3-0025B3E022C2.root output2=test_mc_10 > &test_mc_10.log&
+
+#--AOD 2011
+cmsRun oniaaod_lambdapat_1file_2011_424_may10_cfg.py print  maxEvents=1000 files=/store/data/Run2011A/MuOnia/AOD/PromptReco-v6/000/172/999/EC90DBF4-78C5-E011-8EDB-BCAEC518FF74.root output2=lambda2011_tstpataod
+
+
+#test Lambda_b MC(eric file) (Jan 2, 2013) [this have no genParticlesPlusSim]
+cmsRun lambdapat_mc_hec.py  print  maxEvents=500 files=file:/uscms_data/d2/brownson/tmp/FCFABBF5-1DB0-E111-B6E3-0025B3E022C2.root  output2=lambda2011_tstericaod_mc00 >&mc_tsteric00.log&
+
+#test Lambda_b MC (Jan 2, 2013)  [this files is one of the latest with genParticlesPlusSim]
+cmsRun lambdapat_mc_hec.py  print  maxEvents=500 files=file:maria_mc_tst/test_mc/2EF32735-00EE-E111-A0B0-0017A477041C.root  output2=lambda2011_tstaod_04 >&mc_tst04.log&

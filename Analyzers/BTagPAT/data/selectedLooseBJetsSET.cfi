@@ -1,0 +1,9 @@
+
+include "Analyzers/BTagPAT/data/Jetpt30Selector.cfi"
+
+module selectedLooseBJetsSET = BDiscriminatorPatJetSelector {
+  InputTag src      = selectedLayer1JetsPt30
+  string disc       = "softElectronBJetTags"
+  double discCut    = 0.0
+}
+

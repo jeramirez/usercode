@@ -1,0 +1,66 @@
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version  5.22/00a  12 February 2009   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.22/00a (branches/v5-22-00-patches@27437, May 29 2009, 06:24:00 on linux)
+
+CINT/ROOT C/C++ Interpreter version 5.16.29, Jan 08, 2008
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+
+Processing pointsed.C("selectedLayer1_qcd.root","Corr30t2_")...
+ Tagger: Corr30t2_gTC2_udsg
+ Loose(10%):  cut > 1.992 b-eff = 0.8264
+ Medium(1%):   cut > 4.575 b-eff = 0.6367
+ Tight(0.1%) =  cut > 14.96 b-eff = 0.1978
+ Tagger: Corr30t2_gTC3_udsg
+ Loose(10%):  cut > 1.673 b-eff = 0.6675
+ Medium(1%):   cut > 2.451 b-eff = 0.5865
+ Tight(0.1%) =  cut > 3.747 b-eff = 0.4883
+ Tagger: Corr30t2_gTP_udsg
+ Loose(10%):  cut > 0.2466 b-eff = 0.8428
+ Medium(1%):   cut > 0.5042 b-eff = 0.6414
+ Tight(0.1%) =  cut > 0.7191 b-eff = 0.4723
+ Tagger: Corr30t2_gSSV_udsg
+ Loose(10%):  cut > 1.2 b-eff = 0.7088
+ Medium(1%):   cut > 2.148 b-eff = 0.5732
+ Tight(0.1%) =  cut > 3.513 b-eff = 0.2079
+ Tagger: Corr30t2_gCSV_udsg
+ Loose(10%):  cut > 0.3578 b-eff = 0.8789
+ Medium(1%):   cut > 0.8239 b-eff = 0.7147
+ Tight(0.1%) =  cut > 0.9278 b-eff = 0.5561
+ Tagger: Corr30t2_gMSV_udsg
+ Loose(10%):  cut > 0.3769 b-eff = 0.8789
+ Medium(1%):   cut > 0.7785 b-eff = 0.7195
+ Tight(0.1%) =  cut > 0.9349 b-eff = 0.5455
+ Tagger: Corr30t2_gSMT_udsg
+ Loose(10%):  cut > -0.01 b-eff = 0.1729
+ Medium(1%):   cut > 0.1373 b-eff = 0.1525
+ Tight(0.1%) =  cut > 0.3138 b-eff = 0.07986
+ Tagger: Corr30t2_gBTP_udsg
+ Loose(10%):  cut > 1.178 b-eff = 0.8672
+ Medium(1%):   cut > 2.296 b-eff = 0.697
+ Tight(0.1%) =  cut > 3.471 b-eff = 0.5069
+ Tagger: Corr30t2_gSMTbyIP3d_udsg
+ Loose(10%):  cut > -9 b-eff = 0.1662
+ Medium(1%):   cut > 0.3761 b-eff = 0.1464
+ Tight(0.1%) =  cut > 22.83 b-eff = 0.04293
+ Tagger: Corr30t2_gSMTbyPt_udsg
+ Loose(10%):  cut > -7.649 b-eff = 0.5782
+ Medium(1%):   cut > 0.5866 b-eff = 0.1163
+ Tight(0.1%) =  cut > 1.993 b-eff = 0.03465
+ Tagger: Corr30t2_gSETbyIP3d_udsg
+ Loose(10%):  cut > -9 b-eff = 0.1569
+ Medium(1%):   cut > 2.403 b-eff = 0.1045
+ Tight(0.1%) =  cut > 15.63 b-eff = 0.0359
+ Tagger: Corr30t2_gSETbyPt_udsg
+ Loose(10%):  cut > -0.7742 b-eff = 0.2268
+ Medium(1%):   cut > 1.055 b-eff = 0.05012
+ Tight(0.1%) =  cut > 3.187 b-eff = 0.00133

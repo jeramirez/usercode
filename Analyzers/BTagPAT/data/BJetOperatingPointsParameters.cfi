@@ -1,0 +1,24 @@
+#BJet Operating Points Parameters
+block BJetOperatingPointsParameters =
+{
+PSet BJetOperatingPoints ={
+   vdouble
+   discCutLoose =  { 1.912,                         1.342,                            0.2351,
+                     1.25,                          0.3987,                           0.4077,
+                     0.0,                           0.0}
+   vdouble
+   discCutMedium=  { 5.799,                         2.55,                             0.5256,
+                     1.854,                         0.8271,                           0.7957,
+                     0.4237,                        0.1512}
+   vdouble
+   discCutTight =  { 14.2,                          8.039,                            0.789,
+                     3.217,                         0.9671,                           0.9746,
+                     0.8728,                        0.4299}
+   vstring
+   bdiscriminators={"trackCountingHighEffBJetTags", "trackCountingHighPurBJetTags",   "jetProbabilityBJetTags",
+                    "simpleSecondaryVertexBJetTags","combinedSecondaryVertexBJetTags","combinedSecondaryVertexMVABJetTags",
+                    "softElectronBJetTags",         "softMuonBJetTags"}
+   string DefaultOp   ="Loose"
+   string DefaultBdisc="trackCountingHighEffBJetTags"
+   }
+}

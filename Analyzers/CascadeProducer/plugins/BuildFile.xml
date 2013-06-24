@@ -1,0 +1,11 @@
+  <use name="FWCore/Framework" />
+  <use name="FWCore/PluginManager"/>
+  <use name="FWCore/ParameterSet"/>
+  <use name="DataFormats/Candidate"/>
+  <use name="CommonTools/UtilAlgos"/>
+  <use name="RecoVertex/KinematicFitPrimitives"/>
+  <use name="RecoVertex/KinematicFit"/>
+  <use name="Analyzers/CascadeProducer"/>
+  <library   file="*.cc" name="AnalyzersCascadeProducerPlugins">
+   <flags EDM_PLUGIN="1"/> 
+  </library>

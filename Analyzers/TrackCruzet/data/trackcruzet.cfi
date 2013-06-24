@@ -1,0 +1,46 @@
+// Put here the modules you want the cfg file to use,
+// then include this file in your cfg file.
+// i.e. in TrackCruzet.cfg replace 'module demo = TrackCruzet {} '
+// with 'include "anlyzerDir/TrackCruzet/data/TrackCruzet.cfi" '.
+// (Remember that filenames are case sensitive.)
+
+///////////////////////////////////////////////////////////////
+ ### Magnetic fiuld: force mag field to be 0.0 tesla
+ include "Configuration/StandardSequences/data/MagneticField.cff"
+ include "Configuration/GlobalRuns/data/ForceZeroTeslaField.cff"
+ include "Configuration/StandardSequences/data/Geometry.cff"
+ include "Configuration/StandardSequences/data/ReconstructionCosmics.cff"
+ include "Configuration/StandardSequences/data/FrontierConditions_GlobalTag.cff"
+ include "TrackPropagation/SteppingHelixPropagator/data/SteppingHelixPropagatorAny.cfi" 
+
+module trackcruzet = TrackCruzet {
+
+  //untracked string OutputFileName = "validation.root"  
+
+        InputTag ctfTrackCollection = ctfWithMaterialTracks
+        InputTag rsTrackCollection = rsWithMaterialTracks
+        InputTag cosmicTFTrackCollection = cosmicTrackFinder
+
+	string SALabel = "cosmicMuons" #globalCosmicMuons
+	string PropagatorName = "SteppingHelixPropagatorAny"
+	string ascciFileName = "EnentCross.txt"
+
+	double radius_IP    = 4.
+	double maxZ_IP      = 20.
+	double radius_Pixel = 15.
+	double maxZ_Pixel   = 46.5
+	double radius_SiTrk = 110.
+	double maxZ_SiTrk   = 230.0
+	double position_y = 300.0
+	double position_z = 400.0
+	uint32 days  = 15
+	uint32 hours = 24
+        uint32 mins  = 60
+        uint32 secs  = 60
+        uint32 date_year  = 2008
+        uint32 date_month = 7 
+        uint32 date_day   = 1
+        uint32 date_hour  = 0
+        uint32 date_min   = 0
+        uint32 date_sec   = 0
+}

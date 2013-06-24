@@ -1,0 +1,9 @@
+
+include "Analyzers/BTagPAT/data/Jetpt30Selector.cfi"
+
+module selectedLooseBJetsCSV = BDiscriminatorPatJetSelector {
+  InputTag src      = selectedLayer1JetsPt30
+  string disc       = "combinedSecondaryVertexBJetTags"
+  double discCut    = 0.3987
+}
+

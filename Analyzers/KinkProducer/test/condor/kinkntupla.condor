@@ -1,0 +1,27 @@
+universe = vanilla
+Executable = ../test_kinkntupla.csh 
+Requirements = OpSys == "LINUX" && (Arch =="INTEL" || Arch =="x86_64") && (Memory > 1400)
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT
+Output = logs/kink_$(Process).out 
+Error = logs/kink_$(Process).err
+Log = logs/kink_$(Process).log 
+#+UseSL5=TRUE
+notify_user = eduardo@charma.uprm.edu
+Notification = Error
+
+#arguments = 1 1
+#Queue 1
+
+#arguments = 396 396 /../user/jramirez/cascade/424/run2011A-PromptReco-v4-XiTracks
+#Queue 1
+
+arguments = $$([$(Process)+1]) $$([$(Process)+1]) /../user/jramirez/cascade/424/run2011A-PromptReco-v4-XiTracks
+Queue 404
+
+#arguments = $$([$(Process)+1]) $$([$(Process)+1]) /store/user/jervar/cascade/424/run2011A-PromptReco-v4
+#Queue 411
+
+
+
+

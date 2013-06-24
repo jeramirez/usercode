@@ -1,0 +1,16 @@
+# start new project
+scramv1 project CMSSW CMSSW_3_1_0_pre9
+
+#chdir to src
+cd CMSSW_3_1_0_pre9/src
+
+#authenticate to cvs server at CERN using cern account
+kserver_init
+
+#check out from UserCode
+cvs co -d Analyzers/BTagPAT UserCode/PuertoRicoGroup/Analyzers/BTagPAT
+
+#check out from CMSSW code a release version (if omited it means HEAD)
+cvs co -r CMSSW_3_1_0_pre9 PhysicsTools/PatAlgos
+
+#after changes see README.cvs to put it back to cvs

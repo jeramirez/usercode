@@ -1,0 +1,5 @@
+# make a new directory/project
+cvs co UserCode/PuertoRicoGroup/README.cvs
+cd UserCode/PuertoRicoGroup
+mkdir YourNewProject
+cvs add YourNewProject

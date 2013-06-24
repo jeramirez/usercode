@@ -1,0 +1,18 @@
+
+include "Analysis/BTagPAT/data/Jetpt30Selector.cfi"
+include "Analysis/BTagPAT/data/selectedLooseBJetsTC2.cfi"
+include "Analysis/BTagPAT/data/selectedLooseBJetsTC3.cfi"
+include "Analysis/BTagPAT/data/selectedLooseBJetsTP.cfi"
+include "Analysis/BTagPAT/data/selectedLooseBJetsSSV.cfi"
+include "Analysis/BTagPAT/data/selectedLooseBJetsCSV.cfi"
+include "Analysis/BTagPAT/data/selectedLooseBJetsMSV.cfi"
+include "Analysis/BTagPAT/data/selectedLooseBJetsSET.cfi"
+include "Analysis/BTagPAT/data/selectedLooseBJetsSMT.cfi"
+
+//default Loose TC2
+sequence selectedLooseBJets = {
+  selectedLayer1JetsPt30,
+  selectedLooseBJetsTC2
+
+}
+

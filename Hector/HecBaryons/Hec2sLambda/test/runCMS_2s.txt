@@ -1,0 +1,8 @@
+#--2011 prompt4 tst
+cmsRun uupipi_2011_424_may10_cfg.py print  maxEvents=-1 files=/store/data/Run2011A/MuOnia/RECO/PromptReco-v4/000/167/898/22C736D2-78A3-E011-B678-003048D37514.root output2=pipi2011_tst00
+
+#--2010 test
+cmsRun uupipi_2010_424_apr21_cfg.py print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0008/DCBA55B8-C76F-E011-A87C-E0CB4E19F9B8.root output2=pipi2010_tst00
+
+#--MC Lambda
+cmsRun uupipi_2011_424_may10_cfg.py print  maxEvents=-1 files="file:/uscms_data/d3/maria22/00390632-5BA1-E011-9427-0017A4770C2C.root" output2=pipi2011mc_tst00

@@ -1,0 +1,41 @@
+#--Dimuon Crash
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0000/44E20311-C56D-E011-BE4B-90E6BA19A20B.root output2=dimu_crash
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0002/4ADC3B47-3D6E-E011-B516-001A4BA81F0A.root output2=dimu_crash
+
+
+
+#--cascade crash
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0000/88A4B558-C06D-E011-90D6-00261834B55F.root output2=xi_crash
+
+
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0001/520A9555-D76D-E011-B7D7-001EC9D8D085.root output2=xi_crash
+
+#--crash on Jul 31
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010B/MuOnia/RECO/Apr21ReReco-v1/10001/CCC31B52-AD7C-E011-BB49-E41F13181ADC.root output2=xi_crash_aug1
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010B/MuOnia/RECO/Apr21ReReco-v1/10000/FA301ECB-737C-E011-9F2E-E41F131816A0.root output2=xi_crash_aug1
+
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0000/04F751A2-C06D-E011-88D1-E0CB4E29C4C7.root output2=xi_crash_aug1
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0000/6E0A02D3-926F-E011-96CB-E0CB4E1A117E.root output2=xi_crash_aug24
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0001/28EEEFE3-476E-E011-8CA4-485B39800C04.root output2=xi_crash_aug25
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010A/MuOnia/RECO/Apr21ReReco-v1/0002/82717B02-4D6E-E011-949D-90E6BA19A205.root output2=xi_44crash_aug27
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010B/MuOnia/RECO/Apr21ReReco-v1/0003/42E1D0EC-B577-E011-BB56-00215E21D6A8.root output2=xi_44crash_aug27
+
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010B/MuOnia/RECO/Apr21ReReco-v1/10000/D68AAABE-817C-E011-BE7E-00215E2223C4.root output2=xi_44crash_aug27
+
+#--1 crash for CASCADE Aug 30, sep 13, 2011 
+cmsRun onia_cascade_1file_424_apr21_cfg.py  print  maxEvents=-1 files=/store/data/Run2010B/MuOnia/RECO/Apr21ReReco-v1/0001/2C8B579E-F377-E011-B340-00215E222244.root output2=xi_44crash_sep13
+                                                                      /store/data/Run2010B/MuOnia/RECO/Apr21ReReco-v1/0001/2C8B579E-F377-E011-B340-00215E222244.root
+
+#--crash dimuon in 2011 (file not found ?)
+cmsRun onia_dimuon_1file_2011_424_may10_cfg.py  print  maxEvents=-1 files=/store/data/Run2011A/MuOnia/RECO/May10ReReco-v1/0005/B4CFA170-FE7E-E011-9EE0-002618943981.root output2=dimuon2011_example
+
+#--TEST RUN2011A  from MUONIA
+cmsRun onia_xi_1file_2011_424_may10_cfg.py  print  maxEvents=-1 files=/store/data/Run2011A/MuOnia/RECO/May10ReReco-v1/0000/0222F48D-447E-E011-B31A-001A928116E6.root output2=xi2011a_ex_0

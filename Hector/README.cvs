@@ -1,0 +1,40 @@
+setenv CVSROOT :gserver:cmssw.cvs.cern.ch:/local/reps/CMSSW
+kserver_init
+cd "to my directory to check in"
+cvs -d $CVSROOT ci -m "my comment" file
+
+#check out
+cvs co -d Hector UserCode/PuertoRicoGroup/Hector
+cvs co -d . UserCode/PuertoRicoGroup/Hector/README.cvs
+cvs co -d HecBaryons UserCode/PuertoRicoGroup/Hector/HecBaryons
+
+# update cvs
+kserver_init
+project CMSSW
+cvs -d $CVSROOT -n update -dA
+cvs -d $CVSROOT ci -m " new update " file.cc
+
+#remove 
+cvs -d $CVSROOT remove test/BJetOperatingPoints.cfi
+cvs -d $CVSROOT ci -m "deprecated" test/BJetOperatingPoints.cfi
+
+#add
+cvs -d $CVSROOT add test/BJetOperatingPoints.cfi
+cvs -d $CVSROOT ci -m "new version" test/BJetOperatingPoints.cfi
+
+# make a new directory/project
+mkdir tst
+cd tst
+#--check out old the path where I add my newproject
+cvs co UserCode/PuertoRicoGroup/Hector/README.cvs
+cd UserCode/PuertoRicoGroup/Hector
+
+mkdir YourNewProject  OR copy YourNewProject here
+
+cvs add YourNewProject
+cvs add YourNewProject/test
+cvs add YourNewProject/test/file.txt
+cvs -d $CVSROOT ci -m "new version" YourNewProject/test
+cvs -d $CVSROOT ci -m "new version" YourNewProject/test/file.txt
+
+rm -rf tst  <--remove this folder

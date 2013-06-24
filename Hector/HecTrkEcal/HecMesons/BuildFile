@@ -1,0 +1,14 @@
+<use name=FWCore/Framework>
+<use name=FWCore/PluginManager>
+<use name=FWCore/ParameterSet>
+<flags EDM_PLUGIN=1>
+<use name=DataFormats/TrackReco>
+<use name=CommonTools/UtilAlgos>
+<export>
+   <lib name=HecTrkEcalHecMesons>
+   <use name=FWCore/Framework>
+   <use name=FWCore/PluginManager>
+   <use name=FWCore/ParameterSet>
+   <use name=DataFormats/TrackReco>
+   <use name=CommonTools/UtilAlgos> 
+</export>
